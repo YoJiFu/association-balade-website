@@ -1,0 +1,21 @@
+uuid: b025f53a-e941-49ec-848d-79de6eee537b
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_media_text_content
+    - paragraphs.paragraphs_type.texte
+  module:
+    - text
+id: paragraph.texte.field_media_text_content
+field_name: field_media_text_content
+entity_type: paragraph
+bundle: texte
+label: Contenu
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long
