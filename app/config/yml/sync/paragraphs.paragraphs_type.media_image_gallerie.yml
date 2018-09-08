@@ -1,0 +1,9 @@
+uuid: 73a31300-4335-4049-bedf-707c9a713e09
+langcode: en
+status: true
+dependencies: {  }
+id: media_image_gallerie
+label: 'Gallerie d''images'
+icon_uuid: null
+description: ''
+behavior_plugins: {  }

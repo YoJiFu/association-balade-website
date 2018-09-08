@@ -1,0 +1,39 @@
+uuid: b9aaf5d8-d2a9-4479-bd55-b6f285ccf419
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_action_media
+    - node.type.action
+    - paragraphs.paragraphs_type.media_image_gallerie
+    - paragraphs.paragraphs_type.media_youtube
+  module:
+    - entity_reference_revisions
+id: node.action.field_action_media
+field_name: field_action_media
+entity_type: node
+bundle: action
+label: Media
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    negate: 0
+    target_bundles:
+      media_image_gallerie: media_image_gallerie
+      media_youtube: media_youtube
+    target_bundles_drag_drop:
+      media_image_gallerie:
+        enabled: true
+        weight: 4
+      media_youtube:
+        enabled: true
+        weight: 5
+      social_network:
+        weight: 6
+        enabled: false
+field_type: entity_reference_revisions
