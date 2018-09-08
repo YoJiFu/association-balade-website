@@ -3,6 +3,7 @@ langcode: en
 status: true
 dependencies:
   config:
+    - field.field.node.website_administration.field_home_page_separator
     - field.field.node.website_administration.field_web_admin_footer_social
     - field.field.node.website_administration.field_web_admin_home_banner
     - field.field.node.website_administration.field_web_admin_home_description
@@ -20,6 +21,7 @@ third_party_settings:
       children:
         - field_web_admin_home_banner
         - field_web_admin_home_description
+        - field_home_page_separator
       parent_name: ''
       weight: 7
       format_type: tab
@@ -55,6 +57,14 @@ content:
     region: content
     settings: {  }
     third_party_settings: {  }
+  field_home_page_separator:
+    weight: 10
+    settings:
+      progress_indicator: throbber
+      preview_image_style: thumbnail
+    third_party_settings: {  }
+    type: image_image
+    region: content
   field_web_admin_footer_social:
     type: entity_reference_paragraphs
     weight: 26

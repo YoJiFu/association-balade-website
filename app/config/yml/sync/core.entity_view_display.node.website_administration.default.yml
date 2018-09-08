@@ -3,6 +3,7 @@ langcode: en
 status: true
 dependencies:
   config:
+    - field.field.node.website_administration.field_home_page_separator
     - field.field.node.website_administration.field_web_admin_footer_social
     - field.field.node.website_administration.field_web_admin_home_banner
     - field.field.node.website_administration.field_web_admin_home_description
@@ -17,6 +18,15 @@ targetEntityType: node
 bundle: website_administration
 mode: default
 content:
+  field_home_page_separator:
+    weight: 104
+    label: above
+    settings:
+      image_style: ''
+      image_link: ''
+    third_party_settings: {  }
+    type: image
+    region: content
   field_web_admin_footer_social:
     type: entity_reference_revisions_entity_view
     weight: 103
