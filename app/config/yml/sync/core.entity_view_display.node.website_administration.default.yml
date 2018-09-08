@@ -3,10 +3,12 @@ langcode: en
 status: true
 dependencies:
   config:
+    - field.field.node.website_administration.field_web_admin_footer_social
     - field.field.node.website_administration.field_web_admin_home_banner
     - field.field.node.website_administration.field_web_admin_home_description
     - node.type.website_administration
   module:
+    - entity_reference_revisions
     - image
     - text
     - user
@@ -15,6 +17,15 @@ targetEntityType: node
 bundle: website_administration
 mode: default
 content:
+  field_web_admin_footer_social:
+    type: entity_reference_revisions_entity_view
+    weight: 103
+    label: above
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    region: content
   field_web_admin_home_banner:
     weight: 101
     label: above

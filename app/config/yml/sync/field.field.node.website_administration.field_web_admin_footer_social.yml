@@ -1,0 +1,31 @@
+uuid: dd90a93b-ff8d-46f5-a71a-97accd499033
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_web_admin_footer_social
+    - node.type.website_administration
+    - paragraphs.paragraphs_type.social_network
+  module:
+    - entity_reference_revisions
+id: node.website_administration.field_web_admin_footer_social
+field_name: field_web_admin_footer_social
+entity_type: node
+bundle: website_administration
+label: 'Réseaux sociaux'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    negate: 0
+    target_bundles:
+      social_network: social_network
+    target_bundles_drag_drop:
+      social_network:
+        enabled: true
+        weight: 2
+field_type: entity_reference_revisions

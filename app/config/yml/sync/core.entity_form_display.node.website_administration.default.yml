@@ -3,6 +3,7 @@ langcode: en
 status: true
 dependencies:
   config:
+    - field.field.node.website_administration.field_web_admin_footer_social
     - field.field.node.website_administration.field_web_admin_home_banner
     - field.field.node.website_administration.field_web_admin_home_description
     - image.style.thumbnail
@@ -10,6 +11,7 @@ dependencies:
   module:
     - field_group
     - image
+    - paragraphs
     - path
     - text
 third_party_settings:
@@ -29,6 +31,19 @@ third_party_settings:
         id: ''
         classes: ''
       label: 'Page d''accueil'
+    group_footer:
+      children:
+        - field_web_admin_footer_social
+      parent_name: ''
+      weight: 20
+      format_type: tab
+      format_settings:
+        id: ''
+        classes: ''
+        formatter: closed
+        description: ''
+        required_fields: true
+      label: 'Pied de page'
 id: node.website_administration.default
 targetEntityType: node
 bundle: website_administration
@@ -40,6 +55,18 @@ content:
     region: content
     settings: {  }
     third_party_settings: {  }
+  field_web_admin_footer_social:
+    type: entity_reference_paragraphs
+    weight: 26
+    settings:
+      title: Paragraph
+      title_plural: Paragraphs
+      edit_mode: open
+      add_mode: dropdown
+      form_display_mode: default
+      default_paragraph_type: ''
+    third_party_settings: {  }
+    region: content
   field_web_admin_home_banner:
     weight: 8
     settings:
