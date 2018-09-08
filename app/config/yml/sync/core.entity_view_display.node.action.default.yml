@@ -19,7 +19,7 @@ mode: default
 content:
   field_action_banner:
     weight: 101
-    label: above
+    label: hidden
     settings:
       image_style: ''
       image_link: ''
@@ -28,7 +28,7 @@ content:
     region: content
   field_action_description:
     weight: 102
-    label: above
+    label: hidden
     settings: {  }
     third_party_settings: {  }
     type: text_default
@@ -36,7 +36,7 @@ content:
   field_action_media:
     type: entity_reference_revisions_entity_view
     weight: 103
-    label: above
+    label: hidden
     settings:
       view_mode: default
       link: ''
@@ -44,7 +44,7 @@ content:
     region: content
   links:
     weight: 100
+    region: content
     settings: {  }
     third_party_settings: {  }
-    region: content
 hidden: {  }
