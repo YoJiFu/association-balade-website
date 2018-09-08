@@ -1,0 +1,27 @@
+uuid: 6171e2d0-044f-41e6-89fe-cea1247f593d
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.media_banner.field_media_banner_image
+    - image.style.thumbnail
+    - paragraphs.paragraphs_type.media_banner
+  module:
+    - image
+id: paragraph.media_banner.default
+targetEntityType: paragraph
+bundle: media_banner
+mode: default
+content:
+  field_media_banner_image:
+    weight: 0
+    settings:
+      progress_indicator: throbber
+      preview_image_style: thumbnail
+    third_party_settings: {  }
+    type: image_image
+    region: content
+hidden:
+  created: true
+  status: true
+  uid: true
