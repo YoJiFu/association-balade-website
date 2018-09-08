@@ -13,6 +13,7 @@ module:
   contextual: 0
   datetime: 0
   dblog: 0
+  devel: 0
   dynamic_page_cache: 0
   editor: 0
   entity_browser: 0
@@ -41,6 +42,7 @@ module:
   toolbar: 0
   tour: 0
   user: 0
+  vardumper: 0
   views_ui: 0
   menu_link_content: 1
   views: 10
