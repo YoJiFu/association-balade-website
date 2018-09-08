@@ -1,0 +1,18 @@
+uuid: 3a066831-2993-43e6-b22e-2f975e9422b8
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.action
+id: node.action.title
+field_name: title
+entity_type: node
+bundle: action
+label: Titre
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

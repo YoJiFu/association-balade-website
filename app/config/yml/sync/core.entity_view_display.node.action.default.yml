@@ -1,0 +1,39 @@
+uuid: df9a963d-a966-4551-a3f6-20e76e1d6d00
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.action.field_action_banner
+    - field.field.node.action.field_action_description
+    - node.type.action
+  module:
+    - image
+    - text
+    - user
+id: node.action.default
+targetEntityType: node
+bundle: action
+mode: default
+content:
+  field_action_banner:
+    weight: 101
+    label: above
+    settings:
+      image_style: ''
+      image_link: ''
+    third_party_settings: {  }
+    type: image
+    region: content
+  field_action_description:
+    weight: 102
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden: {  }

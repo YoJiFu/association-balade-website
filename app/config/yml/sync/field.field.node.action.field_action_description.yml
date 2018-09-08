@@ -1,0 +1,22 @@
+uuid: 09e36edb-2eb5-47cb-a7c4-81765eea5571
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_action_description
+    - node.type.action
+  module:
+    - text
+id: node.action.field_action_description
+field_name: field_action_description
+entity_type: node
+bundle: action
+label: 'Description de l''action'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: false
+field_type: text_with_summary
