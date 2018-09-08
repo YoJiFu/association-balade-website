@@ -1,0 +1,6 @@
+type: module
+name: Ballade core
+description: Contains ballade main feature.
+version: '8.x-0.1'
+core: '8.x'
+project: 'Association Ballade'
