@@ -1,0 +1,20 @@
+uuid: 812fc55b-3c0a-47b6-b13a-2ddffd11568f
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - node.type.corporate_page
+  module:
+    - user
+id: node.corporate_page.teaser
+targetEntityType: node
+bundle: corporate_page
+mode: teaser
+content:
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden: {  }

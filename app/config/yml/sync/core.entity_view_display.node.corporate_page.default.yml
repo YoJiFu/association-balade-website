@@ -1,0 +1,19 @@
+uuid: ee22af62-4814-4bea-8cca-e4d21e83c226
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.corporate_page
+  module:
+    - user
+id: node.corporate_page.default
+targetEntityType: node
+bundle: corporate_page
+mode: default
+content:
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden: {  }
