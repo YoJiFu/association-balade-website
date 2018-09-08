@@ -5,8 +5,10 @@ dependencies:
   config:
     - field.storage.node.field_corporate_page_media
     - node.type.corporate_page
+    - paragraphs.paragraphs_type.media_banner
     - paragraphs.paragraphs_type.media_block
     - paragraphs.paragraphs_type.media_image_gallerie
+    - paragraphs.paragraphs_type.media_separator
     - paragraphs.paragraphs_type.media_youtube
     - paragraphs.paragraphs_type.social_network
     - paragraphs.paragraphs_type.texte
@@ -29,9 +31,11 @@ settings:
     target_bundles:
       media_block: media_block
       media_image_gallerie: media_image_gallerie
+      media_banner: media_banner
       media_youtube: media_youtube
       social_network: social_network
       texte: texte
+      media_separator: media_separator
     target_bundles_drag_drop:
       media_block:
         enabled: true
@@ -39,6 +43,9 @@ settings:
       media_image_gallerie:
         enabled: true
         weight: 7
+      media_banner:
+        enabled: true
+        weight: 8
       media_youtube:
         enabled: true
         weight: 8
@@ -48,4 +55,7 @@ settings:
       texte:
         enabled: true
         weight: 10
+      media_separator:
+        enabled: true
+        weight: 11
 field_type: entity_reference_revisions
