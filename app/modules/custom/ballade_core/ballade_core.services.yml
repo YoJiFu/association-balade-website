@@ -1,0 +1,3 @@
+services:
+  ballade_core.limit_content_type:
+    class: Drupal\ballade_core\Services\LimitContentTypeService
