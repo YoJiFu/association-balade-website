@@ -1,0 +1,37 @@
+uuid: 2761913c-1fb8-4bfb-afe0-8777f9a37795
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.social_network.field_social_network_icon
+    - field.field.paragraph.social_network.field_social_network_link
+    - image.style.thumbnail
+    - paragraphs.paragraphs_type.social_network
+  module:
+    - image
+    - link
+id: paragraph.social_network.default
+targetEntityType: paragraph
+bundle: social_network
+mode: default
+content:
+  field_social_network_icon:
+    weight: 0
+    settings:
+      progress_indicator: throbber
+      preview_image_style: thumbnail
+    third_party_settings: {  }
+    type: image_image
+    region: content
+  field_social_network_link:
+    weight: 1
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+    third_party_settings: {  }
+    type: link_default
+    region: content
+hidden:
+  created: true
+  status: true
+  uid: true

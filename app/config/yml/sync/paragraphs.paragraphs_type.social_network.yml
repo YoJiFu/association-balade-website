@@ -1,0 +1,9 @@
+uuid: d8fe1fbf-c0ca-4f20-bc0a-306ce4496db2
+langcode: en
+status: true
+dependencies: {  }
+id: social_network
+label: 'Réseaux sociaux'
+icon_uuid: null
+description: ''
+behavior_plugins: {  }
