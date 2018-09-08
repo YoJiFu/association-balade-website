@@ -1,0 +1,9 @@
+uuid: 23df55bc-6524-46c2-90fa-aa0eb855c566
+langcode: en
+status: true
+dependencies: {  }
+id: media_separator
+label: Separateur
+icon_uuid: null
+description: ''
+behavior_plugins: {  }

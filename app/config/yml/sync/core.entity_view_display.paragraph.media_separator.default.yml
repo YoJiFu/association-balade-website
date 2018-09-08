@@ -1,0 +1,24 @@
+uuid: 4c649c6f-2a54-49d4-b488-110cb6a235d0
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.media_separator.field_media_separator_image
+    - paragraphs.paragraphs_type.media_separator
+  module:
+    - image
+id: paragraph.media_separator.default
+targetEntityType: paragraph
+bundle: media_separator
+mode: default
+content:
+  field_media_separator_image:
+    weight: 0
+    label: hidden
+    settings:
+      image_style: ''
+      image_link: ''
+    third_party_settings: {  }
+    type: image
+    region: content
+hidden: {  }

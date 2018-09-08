@@ -1,0 +1,27 @@
+uuid: 1340f1f7-6ac1-4a3a-a199-f3f2fff7ef67
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.media_separator.field_media_separator_image
+    - image.style.thumbnail
+    - paragraphs.paragraphs_type.media_separator
+  module:
+    - image
+id: paragraph.media_separator.default
+targetEntityType: paragraph
+bundle: media_separator
+mode: default
+content:
+  field_media_separator_image:
+    weight: 0
+    settings:
+      progress_indicator: throbber
+      preview_image_style: thumbnail
+    third_party_settings: {  }
+    type: image_image
+    region: content
+hidden:
+  created: true
+  status: true
+  uid: true
