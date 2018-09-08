@@ -1,0 +1,30 @@
+uuid: 2695fa7a-9901-4436-8e29-164fb8022d90
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.actions_block
+  module:
+    - system
+    - views
+  theme:
+    - ballade_theme
+id: views_block__actions_block_block_1
+theme: ballade_theme
+region: content
+weight: 0
+provider: null
+plugin: 'views_block:actions_block-block_1'
+settings:
+  id: 'views_block:actions_block-block_1'
+  label: ''
+  provider: views
+  label_display: '0'
+  views_label: ''
+  items_per_page: none
+visibility:
+  request_path:
+    id: request_path
+    pages: '<front>'
+    negate: false
+    context_mapping: {  }
