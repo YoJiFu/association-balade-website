@@ -1,0 +1,22 @@
+uuid: 0181402d-44c4-4d7e-94fd-340d3af1d53b
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_web_admin_home_description
+    - node.type.website_administration
+  module:
+    - text
+id: node.website_administration.field_web_admin_home_description
+field_name: field_web_admin_home_description
+entity_type: node
+bundle: website_administration
+label: 'Description page d''accueil'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: false
+field_type: text_with_summary

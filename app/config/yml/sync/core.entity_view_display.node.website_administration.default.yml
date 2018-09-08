@@ -1,0 +1,39 @@
+uuid: 877b1dea-45a0-476e-9e83-6ec5a6073f2b
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.website_administration.field_web_admin_home_banner
+    - field.field.node.website_administration.field_web_admin_home_description
+    - node.type.website_administration
+  module:
+    - image
+    - text
+    - user
+id: node.website_administration.default
+targetEntityType: node
+bundle: website_administration
+mode: default
+content:
+  field_web_admin_home_banner:
+    weight: 101
+    label: above
+    settings:
+      image_style: ''
+      image_link: ''
+    third_party_settings: {  }
+    type: image
+    region: content
+  field_web_admin_home_description:
+    weight: 102
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden: {  }

@@ -1,0 +1,18 @@
+uuid: 7e2586fd-abe2-4d54-955a-9ed82c94ceda
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.website_administration
+id: node.website_administration.title
+field_name: title
+entity_type: node
+bundle: website_administration
+label: Titre
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string
