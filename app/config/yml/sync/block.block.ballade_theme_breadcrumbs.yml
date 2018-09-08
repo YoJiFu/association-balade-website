@@ -1,0 +1,22 @@
+uuid: 45ae4902-41c0-4ac0-8d0b-2998953311b9
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - ballade_theme
+_core:
+  default_config_hash: oXUb3JZR2WW5VOdw4HrhRicCsq51mCgLfRyvheG68ck
+id: ballade_theme_breadcrumbs
+theme: ballade_theme
+region: header
+weight: -5
+provider: null
+plugin: system_breadcrumb_block
+settings:
+  id: system_breadcrumb_block
+  label: Breadcrumbs
+  provider: system
+  label_display: '0'
+visibility: {  }

@@ -1,0 +1,22 @@
+uuid: 80cf0ae6-77f5-4ec2-9c07-88864033c043
+langcode: en
+status: true
+dependencies:
+  theme:
+    - ballade_theme
+_core:
+  default_config_hash: X9I1OB0W3WlWtrK-CNcg6hNWwa8wficanpH8pYnDZDE
+id: ballade_theme_local_tasks
+theme: ballade_theme
+region: content
+weight: -40
+provider: null
+plugin: local_tasks_block
+settings:
+  id: local_tasks_block
+  label: Tabs
+  provider: core
+  label_display: '0'
+  primary: true
+  secondary: true
+visibility: {  }

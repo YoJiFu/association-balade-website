@@ -1,0 +1,30 @@
+schemas:
+  bootstrap: 8000
+  ballade_theme: 8000
+favicon:
+  mimetype: image/vnd.microsoft.icon
+  path: themes/custom/ballade_theme/favicon.ico
+  url: 'http://localvm.local/themes/custom/ballade_theme/favicon.ico'
+  use_default: 0
+features:
+  comment_user_picture: 1
+  comment_user_verification: 1
+  favicon: 1
+  node_user_picture: 1
+logo:
+  path: themes/custom/ballade_theme/logo.png
+  url: ''
+  use_default: 0
+region_wells:
+  top_navigation: ''
+  navigation: ''
+  navigation_collapsible: ''
+  header: ''
+  highlighted: ''
+  help: ''
+  content: ''
+  sidebar_first: ''
+  sidebar_second: ''
+  footer: ''
+table_responsive: '-1'
+table: ''
