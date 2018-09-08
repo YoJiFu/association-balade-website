@@ -1,0 +1,22 @@
+uuid: 8e78c77f-b41d-4a7c-9123-5ebdb47ffd8a
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_media_block_name
+    - paragraphs.paragraphs_type.media_block
+  module:
+    - block_field
+id: paragraph.media_block.field_media_block_name
+field_name: field_media_block_name
+entity_type: paragraph
+bundle: media_block
+label: 'Nom du bloc'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  plugin_ids: {  }
+field_type: block_field

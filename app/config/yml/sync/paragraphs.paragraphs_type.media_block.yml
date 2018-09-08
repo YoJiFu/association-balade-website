@@ -1,0 +1,9 @@
+uuid: b6af00de-d3ce-4a62-ab0c-7625ac5587aa
+langcode: en
+status: true
+dependencies: {  }
+id: media_block
+label: Bloc
+icon_uuid: null
+description: ''
+behavior_plugins: {  }
