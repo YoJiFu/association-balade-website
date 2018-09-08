@@ -12,7 +12,8 @@
         "drupal/entity_browser": "^2.0",
         "drupal/devel": "^1.2",
         "drupal/vardumper": "^1.4",
-        "drupal/field_group": "^1.0"
+        "drupal/field_group": "^1.0",
+        "drupal/bootstrap": "^3.12"
     },
     "minimum-stability": "dev",
     "prefer-stable": true,
