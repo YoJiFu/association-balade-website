@@ -9,8 +9,9 @@ Vagrant.configure("2") do |config|
   
   config.vm.synced_folder "./app", "/var/www/html", 
     owner: "www-data",
-    group: "www-data"
-  
+    group: "www-data",
+    mount_options: ["dmode=777,fmode=777"]
+
   config.vm.provider "virtualbox" do |vb|
     vb.gui = false
     vb.memory = "2048"
