@@ -3,17 +3,28 @@ langcode: en
 status: true
 dependencies:
   config:
+    - field.field.node.corporate_page.field_corporate_page_media
     - node.type.corporate_page
   module:
+    - entity_reference_revisions
     - user
 id: node.corporate_page.default
 targetEntityType: node
 bundle: corporate_page
 mode: default
 content:
-  links:
-    weight: 100
-    settings: {  }
+  field_corporate_page_media:
+    type: entity_reference_revisions_entity_view
+    weight: 101
+    label: hidden
+    settings:
+      view_mode: default
+      link: ''
     third_party_settings: {  }
     region: content
+  links:
+    weight: 100
+    region: content
+    settings: {  }
+    third_party_settings: {  }
 hidden: {  }
