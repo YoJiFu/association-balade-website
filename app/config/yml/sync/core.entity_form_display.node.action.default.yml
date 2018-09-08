@@ -6,6 +6,7 @@ dependencies:
     - field.field.node.action.field_action_banner
     - field.field.node.action.field_action_description
     - field.field.node.action.field_action_media
+    - field.field.node.action.field_action_thumbnail
     - image.style.thumbnail
     - node.type.action
   module:
@@ -20,6 +21,7 @@ third_party_settings:
       children:
         - field_action_banner
         - field_action_description
+        - field_action_thumbnail
       parent_name: ''
       weight: 7
       format_type: tab
@@ -82,6 +84,14 @@ content:
       form_display_mode: default
       default_paragraph_type: ''
     third_party_settings: {  }
+    region: content
+  field_action_thumbnail:
+    weight: 10
+    settings:
+      progress_indicator: throbber
+      preview_image_style: thumbnail
+    third_party_settings: {  }
+    type: image_image
     region: content
   path:
     type: path
