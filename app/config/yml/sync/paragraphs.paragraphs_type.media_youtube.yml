@@ -1,0 +1,9 @@
+uuid: cbc03e0d-8305-43d7-9a0f-0d00dd925e3a
+langcode: en
+status: true
+dependencies: {  }
+id: media_youtube
+label: Youtube
+icon_uuid: null
+description: ''
+behavior_plugins: {  }

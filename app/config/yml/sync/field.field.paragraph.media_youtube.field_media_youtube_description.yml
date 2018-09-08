@@ -1,0 +1,21 @@
+uuid: d7df42ec-d190-4eca-82e5-a7438831296b
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_media_youtube_description
+    - paragraphs.paragraphs_type.media_youtube
+  module:
+    - text
+id: paragraph.media_youtube.field_media_youtube_description
+field_name: field_media_youtube_description
+entity_type: paragraph
+bundle: media_youtube
+label: 'Description de la vidéo'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

@@ -1,0 +1,40 @@
+uuid: 9a6f079e-0faf-4204-a12f-de87ea0a693d
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.media_youtube.field_media_youtube_description
+    - field.field.paragraph.media_youtube.field_media_youtube_url
+    - paragraphs.paragraphs_type.media_youtube
+  module:
+    - text
+    - youtube
+id: paragraph.media_youtube.default
+targetEntityType: paragraph
+bundle: media_youtube
+mode: default
+content:
+  field_media_youtube_description:
+    weight: 1
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+  field_media_youtube_url:
+    weight: 0
+    label: hidden
+    settings:
+      youtube_size: 450x315
+      youtube_width: ''
+      youtube_height: ''
+      youtube_autoplay: false
+      youtube_loop: false
+      youtube_showinfo: false
+      youtube_controls: false
+      youtube_autohide: false
+      youtube_iv_load_policy: false
+    third_party_settings: {  }
+    type: youtube_video
+    region: content
+hidden: {  }
