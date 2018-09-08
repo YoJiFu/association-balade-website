@@ -1,0 +1,22 @@
+<?php
+
+use \Drupal\Core\Form\FormStateInterface;
+
+/**
+ * Implements hook_form_FORM_ID_alter().
+ * Limit content type 'website_administration' creation.
+ *
+ * @param array $form
+ * @param FormStateInterface $form_state
+ * @param string $form_id
+ * @return void
+ */
+function ballade_core_form_node_website_administration_form_alter(&$form, FormStateInterface $form_state, $form_id) {
+    $limit_service = Drupal::service('ballade_core.limit_content_type');
+    $limit_service->init($form_state->getFormObject()->getEntity()->bundle(), 1);
+
+    if (! $limit_service->result()) {
+        Drupal::messenger()->addError(t('You can\'t create other website_administration_node'));
+        $form['actions']['submit']['#attributes']['disabled']  = 'disabled';
+    }
+}
