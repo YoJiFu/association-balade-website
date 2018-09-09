@@ -1,0 +1,56 @@
+uuid: 8db9bea4-ae74-4ce0-92f9-40e07739310b
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.media_partner.field_media_partner_description
+    - field.field.paragraph.media_partner.field_media_partner_logo
+    - field.field.paragraph.media_partner.field_media_partner_name
+    - field.field.paragraph.media_partner.field_media_partner_weblink
+    - image.style.thumbnail
+    - paragraphs.paragraphs_type.media_partner
+  module:
+    - image
+    - link
+    - text
+id: paragraph.media_partner.default
+targetEntityType: paragraph
+bundle: media_partner
+mode: default
+content:
+  field_media_partner_description:
+    weight: 2
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+    type: text_textarea
+    region: content
+  field_media_partner_logo:
+    weight: 1
+    settings:
+      progress_indicator: throbber
+      preview_image_style: thumbnail
+    third_party_settings: {  }
+    type: image_image
+    region: content
+  field_media_partner_name:
+    weight: 0
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_media_partner_weblink:
+    weight: 3
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+    third_party_settings: {  }
+    type: link_default
+    region: content
+hidden:
+  created: true
+  status: true
+  uid: true

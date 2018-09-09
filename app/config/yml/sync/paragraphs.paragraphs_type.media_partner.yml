@@ -1,0 +1,9 @@
+uuid: 17669a1f-ca5f-4379-9ff2-241d1ace399a
+langcode: en
+status: true
+dependencies: {  }
+id: media_partner
+label: Partenaire
+icon_uuid: null
+description: ''
+behavior_plugins: {  }

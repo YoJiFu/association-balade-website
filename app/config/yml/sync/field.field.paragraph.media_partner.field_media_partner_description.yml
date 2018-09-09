@@ -1,0 +1,21 @@
+uuid: 97257034-4bc2-4fc4-b428-a8e78efa10c1
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_media_partner_description
+    - paragraphs.paragraphs_type.media_partner
+  module:
+    - text
+id: paragraph.media_partner.field_media_partner_description
+field_name: field_media_partner_description
+entity_type: paragraph
+bundle: media_partner
+label: 'Description du partenaire'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long
