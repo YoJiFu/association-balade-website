@@ -1,11 +1,7 @@
 {# Original template : themes/contrib/boostrap/templates/system/page.html.twig #}
 {% set container = theme.settings.fluid_container ? 'container-fluid' : 'container' %}
 {# Navbar #}
-<div class="container">
-    {% if page.top_navigation %}
-        {{ page.top_navigation }}
-    {% endif %}
-</div>
+
 {% if page.navigation or page.navigation_collapsible %}
   {% block navbar %}
     {%
@@ -16,6 +12,11 @@
       ]
     %}
     <header{{ navbar_attributes.addClass(navbar_classes) }} id="navbar" role="banner">
+    <div class="container">
+      {% if page.top_navigation %}
+          {{ page.top_navigation }}
+      {% endif %}
+    </div>
       {% if not navbar_attributes.hasClass(container) %}
         <div class="{{ container }}">
       {% endif %}
