@@ -1,0 +1,7 @@
+volunteer_form:
+  path: 'volunteer-form'
+  defaults:
+    _form: '\Drupal\ballade_core\Form\VolunteerForm'
+    _title: 'En devenant bénévole'
+  requirements:
+    _permission: 'access content'
