@@ -1,0 +1,29 @@
+uuid: 6a8005b8-7dc9-46ba-a2d3-68f397d5fa81
+langcode: en
+status: true
+dependencies:
+  config:
+    - contact.form.feedback
+    - field.storage.contact_message.field_contact_reason
+    - taxonomy.vocabulary.contact_reason
+id: contact_message.feedback.field_contact_reason
+field_name: field_contact_reason
+entity_type: contact_message
+bundle: feedback
+label: Objet
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      contact_reason: contact_reason
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference
