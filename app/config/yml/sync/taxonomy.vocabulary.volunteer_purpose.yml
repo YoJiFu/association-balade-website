@@ -1,0 +1,9 @@
+uuid: b46a95fc-9f79-4411-ad78-ab45a4d782bd
+langcode: en
+status: true
+dependencies: {  }
+name: 'Motif de bénévolat'
+vid: volunteer_purpose
+description: ''
+hierarchy: 0
+weight: 0
