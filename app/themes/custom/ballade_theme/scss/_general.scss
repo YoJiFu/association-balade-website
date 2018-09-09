@@ -1,0 +1,21 @@
+a {
+    color: $font-default-color;
+
+    &:hover {
+        color: $font-important-color;
+        text-decoration: none;
+    }
+}
+
+p {
+    font-size: $font-m;
+    letter-spacing: 0.5px;
+}
+
+//------------------------------------------------------------------------------
+// REGIONS
+//------------------------------------------------------------------------------
+.footer {
+    background-color: $background-grey-l;
+    width: 100% !important;
+}
