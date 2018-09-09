@@ -8,7 +8,9 @@ dependencies:
     - paragraphs.paragraphs_type.media_banner
     - paragraphs.paragraphs_type.media_block
     - paragraphs.paragraphs_type.media_image_gallerie
+    - paragraphs.paragraphs_type.media_partner
     - paragraphs.paragraphs_type.media_separator
+    - paragraphs.paragraphs_type.media_text_document
     - paragraphs.paragraphs_type.media_youtube
     - paragraphs.paragraphs_type.social_network
     - paragraphs.paragraphs_type.texte
@@ -36,6 +38,8 @@ settings:
       social_network: social_network
       texte: texte
       media_separator: media_separator
+      media_partner: media_partner
+      media_text_document: media_text_document
     target_bundles_drag_drop:
       media_block:
         enabled: true
@@ -58,4 +62,10 @@ settings:
       media_separator:
         enabled: true
         weight: 11
+      media_partner:
+        enabled: true
+        weight: 13
+      media_text_document:
+        enabled: true
+        weight: 13
 field_type: entity_reference_revisions
