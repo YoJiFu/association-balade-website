@@ -1,0 +1,21 @@
+uuid: 0d69070a-0988-4438-bd13-4ba70f2841d5
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_media_tad_text
+    - paragraphs.paragraphs_type.media_text_document
+  module:
+    - text
+id: paragraph.media_text_document.field_media_tad_text
+field_name: field_media_tad_text
+entity_type: paragraph
+bundle: media_text_document
+label: media_tad_text
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

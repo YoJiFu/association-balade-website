@@ -1,0 +1,19 @@
+uuid: 5dbe2a5d-2845-46b6-9c21-576f61654555
+langcode: en
+status: true
+dependencies:
+  module:
+    - paragraphs
+    - text
+id: paragraph.field_media_tad_text
+field_name: field_media_tad_text
+entity_type: paragraph
+type: text_long
+settings: {  }
+module: text
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

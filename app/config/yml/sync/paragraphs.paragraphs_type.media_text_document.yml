@@ -1,0 +1,9 @@
+uuid: 5f8119de-2905-461a-be31-17a651210124
+langcode: en
+status: true
+dependencies: {  }
+id: media_text_document
+label: 'Texte et document'
+icon_uuid: null
+description: ''
+behavior_plugins: {  }

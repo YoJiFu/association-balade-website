@@ -1,0 +1,27 @@
+uuid: d0375f76-9dc4-4fc8-b6a5-43cfd60727f2
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_media_tad_doc
+    - paragraphs.paragraphs_type.media_text_document
+  module:
+    - file
+id: paragraph.media_text_document.field_media_tad_doc
+field_name: field_media_tad_doc
+entity_type: paragraph
+bundle: media_text_document
+label: media_tad_doc
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  file_directory: '[date:custom:Y]-[date:custom:m]'
+  file_extensions: 'doc docx pdf odt txt'
+  max_filesize: ''
+  description_field: false
+  handler: 'default:file'
+  handler_settings: {  }
+field_type: file
