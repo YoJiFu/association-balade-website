@@ -1,0 +1,7 @@
+<div class="col-sm-12">
+{% if data.current_year == data.start_date %}
+    <p>Copyright &copy; {{ data.current_year }}</p>
+{% else %}
+    <p>Copyright &copy; {{ data.start_date }} - {{ data.current_year }}</p>
+{% endif %}
+</div>

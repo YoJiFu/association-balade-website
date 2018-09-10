@@ -20,3 +20,23 @@ function ballade_core_form_node_website_administration_form_alter(&$form, FormSt
         $form['actions']['submit']['#attributes']['disabled']  = 'disabled';
     }
 }
+
+/**
+ * Implements HOOK_theme().
+ *
+ * @param array $existing
+ * @param string $type
+ * @param string $theme
+ * @param string $path
+ * @return void
+ */
+function ballade_core_theme($existing, $type, $theme, $path) {
+    return [
+        'block__copyright_block' => [
+            'template' => 'block--copyright',
+            'variables' => [
+                'data' => [],
+            ],
+        ]
+    ];
+  }
