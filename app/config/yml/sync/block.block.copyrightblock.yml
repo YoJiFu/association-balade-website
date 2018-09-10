@@ -1,0 +1,20 @@
+uuid: 6ad3a0f2-d079-4a8b-a5ac-0c4faa65d7fc
+langcode: en
+status: true
+dependencies:
+  module:
+    - ballade_core
+  theme:
+    - ballade_theme
+id: copyrightblock
+theme: ballade_theme
+region: footer
+weight: -5
+provider: null
+plugin: volunteer_form_block
+settings:
+  id: volunteer_form_block
+  label: 'Copyright block'
+  provider: ballade_core
+  label_display: '0'
+visibility: {  }
