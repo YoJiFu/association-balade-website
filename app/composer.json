@@ -15,7 +15,8 @@
         "drupal/field_group": "^1.0",
         "drupal/bootstrap": "^3.12",
         "drupal/youtube": "^1.0@beta",
-        "drupal/block_field": "^1.0@alpha"
+        "drupal/block_field": "^1.0@alpha",
+        "drupal/linked_field": "^1.1"
     },
     "minimum-stability": "dev",
     "prefer-stable": true,
