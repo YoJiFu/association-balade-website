@@ -8,6 +8,7 @@
  */
 function ballade_theme_preprocess_block(array &$variables) {
     switch($variables['elements']['#id']) {
+        case 'views_block__free_txt_footer_block_1':
         case 'views_block__social_network_footer_block_1':
         case 'ballade_theme_footer':
             $variables['attributes']['class'][] = 'col-sm-4';
