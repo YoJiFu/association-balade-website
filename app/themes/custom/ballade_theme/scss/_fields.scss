@@ -1,7 +1,13 @@
+.field--name-field-action-banner,
 .views-field-field-home-page-separator {
     img {
         margin: $margin-l auto;
     }
+}
+
+.shadow:hover {
+    box-shadow: 8px 10px 25px $background-red;
+    border-radius: 15px;
 }
 
 .views-field-field-action-thumbnail {

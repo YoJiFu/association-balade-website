@@ -1,0 +1,14 @@
+#block-copyrightblock {
+    text-align: center;
+    margin: $margin-m 0 $margin-m 0;
+}
+
+.paragraph--type--social-network {
+    width: 100%;
+    height: 3em;
+    
+    .field--name-field-social-network-icon {
+        float: left;
+        margin-right: $margin-m;
+    }
+}

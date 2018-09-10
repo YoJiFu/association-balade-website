@@ -24,6 +24,11 @@ class CopyrightBlock extends BlockBase {
         $build['welcome'] = ['#type' => 'container'];
         $build['welcome']['data'] = [
           '#theme' => 'block__copyright_block',
+          '#attributes' => [
+            'class' => [
+              'col-sm-12'
+            ]
+          ],
           '#data' => [
             'start_date' => '2018',
             'current_year' => date("Y"),

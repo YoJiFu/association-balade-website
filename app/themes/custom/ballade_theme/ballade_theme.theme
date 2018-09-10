@@ -1,0 +1,19 @@
+<?php
+
+/**
+ * Implements HOOK_preprocess_block.
+ *
+ * @param array $variables
+ * @return void
+ */
+function ballade_theme_preprocess_block(array &$variables) {
+    switch($variables['elements']['#id']) {
+        case 'views_block__social_network_footer_block_1':
+        case 'ballade_theme_footer':
+            $variables['attributes']['class'][] = 'col-sm-4';
+            break;
+        case 'copyrightblock':
+            $variables['attributes']['class'][] = 'col-sm-12';
+            break;
+    }
+}
