@@ -1,0 +1,21 @@
+uuid: b6f4fd44-c080-42d5-b9c3-91f6c6d872f0
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_web_admin_footer_text
+    - node.type.website_administration
+  module:
+    - text
+id: node.website_administration.field_web_admin_footer_text
+field_name: field_web_admin_footer_text
+entity_type: node
+bundle: website_administration
+label: 'Texte libre footer'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

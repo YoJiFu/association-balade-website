@@ -1,0 +1,15 @@
+uuid: e16e591b-e823-48ec-8d4d-58fea08803e5
+langcode: en
+status: true
+dependencies: {  }
+name: large_thumbnail
+label: 'Large thumbnail ( 167 x 260 )'
+effects:
+  b6026078-c5f0-4ea2-9782-30da556c1e2a:
+    uuid: b6026078-c5f0-4ea2-9782-30da556c1e2a
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 260
+      height: 167
+      anchor: center-center

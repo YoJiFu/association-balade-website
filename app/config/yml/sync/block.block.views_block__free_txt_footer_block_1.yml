@@ -1,21 +1,21 @@
-uuid: 3b5426a5-4a97-4497-a530-72a7fcfc0c40
+uuid: 2907d24e-d24d-4cce-8cfb-5ca6d3d5ff70
 langcode: en
 status: true
 dependencies:
   config:
-    - views.view.social_network_footer
+    - views.view.free_txt_footer
   module:
     - views
   theme:
     - ballade_theme
-id: views_block__social_network_footer_block_1
+id: views_block__free_txt_footer_block_1
 theme: ballade_theme
 region: footer
-weight: -5
+weight: -6
 provider: null
-plugin: 'views_block:social_network_footer-block_1'
+plugin: 'views_block:free_txt_footer-block_1'
 settings:
-  id: 'views_block:social_network_footer-block_1'
+  id: 'views_block:free_txt_footer-block_1'
   label: ''
   provider: views
   label_display: '0'
