@@ -10,7 +10,7 @@ use Drupal\Core\Form\FormInterface;
  * Provides a 'copyrightBlock' block.
  *
  * @Block(
- *   id = "copyright_block",
+ *   id = "block__copyright_block",
  *   admin_label = @Translation("Copyright block"),
  *   category = @Translation("Blocks")
  * )
