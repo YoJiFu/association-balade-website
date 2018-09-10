@@ -11,7 +11,7 @@ dependencies:
 id: views_block__social_network_footer_block_1
 theme: ballade_theme
 region: footer
-weight: 0
+weight: -6
 provider: null
 plugin: 'views_block:social_network_footer-block_1'
 settings:

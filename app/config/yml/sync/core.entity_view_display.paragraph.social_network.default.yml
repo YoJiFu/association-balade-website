@@ -10,6 +10,7 @@ dependencies:
   module:
     - image
     - link
+    - linked_field
 id: paragraph.social_network.default
 targetEntityType: paragraph
 bundle: social_network
@@ -21,7 +22,12 @@ content:
     settings:
       image_style: miniature
       image_link: ''
-    third_party_settings: {  }
+    third_party_settings:
+      linked_field:
+        linked: '1'
+        type: field
+        destination: field_social_network_link
+        advanced: {  }
     type: image
     region: content
   field_social_network_link:
