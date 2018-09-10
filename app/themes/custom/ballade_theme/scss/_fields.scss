@@ -32,6 +32,9 @@
 .partner-content {
     margin-top: $margin-m;
     margin-bottom: $margin-m;
+    padding-top: $margin-l;
+    padding-bottom: $margin-l;
+    background-color: $background-grey-l;
 
     .partner-right-part {
         border-right: 2px solid $background-red;
