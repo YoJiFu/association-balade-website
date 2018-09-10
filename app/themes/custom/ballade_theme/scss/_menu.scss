@@ -10,3 +10,8 @@
         color: $font-important-color;
     }
 }
+
+.navbar-default .navbar-nav > .active > a {
+    background-color: inherit;
+    color: $font-important-color;
+}

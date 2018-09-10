@@ -1,0 +1,25 @@
+{# Original template : modules/contrib/pagraphs/templates/paragraph.html.twig #}
+{%
+  set classes = [
+    'paragraph',
+    'paragraph--type--' ~ paragraph.bundle|clean_class,
+    view_mode ? 'paragraph--view-mode--' ~ view_mode|clean_class,
+    not paragraph.isPublished() ? 'paragraph--unpublished'
+  ]
+%}
+{% block paragraph %}
+  <div{{ attributes.addClass(classes) }}>
+    {% block content %}
+    <div class="row partner-content">
+        <div class="col-sm-6 partner-right-part">
+            {{ content.field_media_partner_logo }}
+            {{ content.field_media_partner_name }}
+            {{ content.field_media_partner_description }}
+        </div>
+        <div class="col-sm-6 partner-left-part">
+            {{ content.field_media_partner_weblink }}
+        </div>
+    </div>
+    {% endblock %}
+  </div>
+{% endblock paragraph %}

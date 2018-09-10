@@ -28,3 +28,16 @@
 .views-field-title {
     text-align: center;
 }
+
+.partner-content {
+    margin-top: $margin-m;
+    margin-bottom: $margin-m;
+
+    .partner-right-part {
+        border-right: 2px solid $background-red;
+    }
+
+    .field--name-field-media-partner-name {
+        font-weight: 600;
+    }
+}
