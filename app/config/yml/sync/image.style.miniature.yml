@@ -1,0 +1,15 @@
+uuid: 7b50fa71-3c7e-473a-a7d1-3fe393b148f1
+langcode: en
+status: true
+dependencies: {  }
+name: miniature
+label: 'Miniature ( 30 x 30 )'
+effects:
+  ef3e0b4a-67c1-4dde-b5fb-425800025eff:
+    uuid: ef3e0b4a-67c1-4dde-b5fb-425800025eff
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 30
+      height: 30
+      anchor: center-center

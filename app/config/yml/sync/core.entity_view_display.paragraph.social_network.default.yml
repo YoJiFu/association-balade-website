@@ -5,6 +5,7 @@ dependencies:
   config:
     - field.field.paragraph.social_network.field_social_network_icon
     - field.field.paragraph.social_network.field_social_network_link
+    - image.style.miniature
     - paragraphs.paragraphs_type.social_network
   module:
     - image
@@ -18,7 +19,7 @@ content:
     weight: 0
     label: hidden
     settings:
-      image_style: ''
+      image_style: miniature
       image_link: ''
     third_party_settings: {  }
     type: image
