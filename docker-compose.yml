@@ -3,7 +3,7 @@ version: "3.3"
 services:
   drupal:
     image: drupal:8.8.2-apache
-    container_name: "association_ballade_drupal"
+    container_name: "${PROJECT_NAME}_drupal"
     ports:
       - 80:80
     volumes:
@@ -14,7 +14,7 @@ services:
 
   postgres:
     image: postgres:latest
-    container_name: "association_ballade_postgres"
+    container_name: "${PROJECT_NAME}_postgres"
     environment:
-      POSTGRES_PASSWORD: password
+      POSTGRES_PASSWORD: "${POSTGRES_PASSWORD}"
     restart: always
