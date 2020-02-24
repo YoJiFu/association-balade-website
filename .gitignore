@@ -1,22 +1,16 @@
-# vagrant configuration directory
-.vagrant/
-
 # Drupal directory
-app/vendor/
-app/core/
-app/modules/contrib/
-app/themes/contrib/
-app/sites/*/settings*.php
-app/sites/*/services*.yml
-app/sites/*/private
-app/sites/default/files/*
-app/private/
-app/public/
-app/adminer.php
-app/themes/custom/ballade_theme/.sass-cache/
-app/themes/custom/ballade_theme/css/
-app/profiles/
-app/sites/local.services.yml
-
-# vagrant log
-*.log
+web/vendor/
+web/core/
+web/modules/contrib/
+web/themes/contrib/
+web/sites/*/settings*.php
+web/sites/*/services*.yml
+web/sites/*/private
+web/sites/default/files/*
+web/private/
+web/public/
+web/adminer.php
+web/themes/custom/ballade_theme/.sass-cache/
+web/themes/custom/ballade_theme/css/
+web/profiles/
+web/sites/local.services.yml
