@@ -11,3 +11,7 @@ RUN echo 'export PATH=$PATH:/root/.composer/vendor/bin' >> /root/.bashrc
 RUN curl https://drupalconsole.com/installer -L -o drupal.phar &&\
     mv drupal.phar /usr/local/bin/drupal &&\
     chmod +x /usr/local/bin/drupal
+
+# Install other required tools
+RUN apt-get update && \
+    apt-get install -y git
