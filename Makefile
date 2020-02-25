@@ -17,9 +17,13 @@ purge:
 	${DOCKER_COMPOSE} down
 
 ###
-# Feature
+# Composer feature
 ###
+composer_install:
+	${DOCKER_COMPOSE} exec -u 0 ${DRUPAL_CONTAINER} bash -c "bash /script/main.sh install_dev_dependancies"
 
+composer_install_nodev:
+	${DOCKER_COMPOSE} exec -u 0 ${DRUPAL_CONTAINER} bash -c "bash /script/main.sh install_prod_dependancies"
 
 ###
 # Interactive container command
