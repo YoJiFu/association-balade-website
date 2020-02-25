@@ -8,6 +8,7 @@ services:
       - 80:80
     volumes:
       - ./web:/var/www/html
+      - ./script:/script
     restart: always
     depends_on:
       - postgres
