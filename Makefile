@@ -26,6 +26,13 @@ composer_install_nodev:
 	${DOCKER_COMPOSE} exec -u 0 ${DRUPAL_CONTAINER} bash -c "bash /script/main.sh install_prod_dependancies"
 
 ###
+# Drupal feature
+###
+
+install_dev:
+	${DOCKER_COMPOSE} exec -u root ${DRUPAL_CONTAINER} bash -c "bash /script/main.sh install_site_dev"
+
+###
 # Interactive container command
 ###
 ifeq (interactive,$(firstword $(MAKECMDGOALS)))
