@@ -1,7 +1,12 @@
 FROM drupal:8.8.2-apache
 
 # Install composer-cli
-RUN curl -sS https://getcomposer.org/installer | php -- --install-dir=/usr/local/bin --filename=composer
+RUN apt-get update &&\
+    apt-get install wget &&\
+    wget https://getcomposer.org/download/1.7.2/composer.phar &&\
+    mv composer.phar /usr/local/bin &&\
+    chmod 777 /usr/local/bin/composer.phar &&\
+    mv /usr/local/bin/composer.phar /usr/local/bin/composer
 
 # Install drush-cli
 RUN composer global require drush/drush
