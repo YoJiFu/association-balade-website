@@ -4,6 +4,9 @@ DRUPAL_CONTAINER="drupal"
 ###
 # Docker command
 ###
+build:
+	${DOCKER_COMPOSE} up --build -d
+
 start:
 	${DOCKER_COMPOSE} up -d
 
