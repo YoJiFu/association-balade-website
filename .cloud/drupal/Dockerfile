@@ -19,4 +19,4 @@ RUN curl https://drupalconsole.com/installer -L -o drupal.phar &&\
 
 # Install other required tools
 RUN apt-get update && \
-    apt-get install -y git
+    apt-get install -y git mariadb-client
