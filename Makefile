@@ -35,6 +35,9 @@ composer_install_nodev:
 install_dev:
 	${DOCKER_COMPOSE} exec -u root ${DRUPAL_CONTAINER} bash -c "bash /script/main.sh install_site_dev"
 
+uninstall_site:
+	${DOCKER_COMPOSE} exec -u root ${DRUPAL_CONTAINER} bash -c "bash /script/main.sh uninstall_site"
+
 ###
 # Interactive container command
 ###
