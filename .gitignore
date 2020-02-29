@@ -12,7 +12,6 @@ web/public/
 web/adminer.php
 web/themes/custom/ballade_theme/.sass-cache/
 web/themes/custom/ballade_theme/css/
-web/profiles/
 web/sites/local.services.yml
 
 #Env files
